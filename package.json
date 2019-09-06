@@ -13,7 +13,8 @@
 		"node": ">=6"
 	},
 	"scripts": {
-		"test": "xo && NODE_ICU_DATA=node_modules/full-icu ava && tsd"
+		"test": "xo && NODE_ICU_DATA=node_modules/full-icu ava && tsd",
+		"build": "webpack"
 	},
 	"files": [
 		"index.js",
@@ -39,6 +40,9 @@
 		"ava": "^1.4.1",
 		"full-icu": "^1.2.1",
 		"tsd": "^0.7.2",
+		"webpack": "^4.39.3",
+		"webpack-cli": "^3.3.8",
 		"xo": "^0.24.0"
-	}
+	},
+	"main": "dist/bundle.js"
 }
